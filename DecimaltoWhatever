@@ -1,0 +1,12 @@
+Number = 192845
+base = 256
+
+hexResult = ""
+while Number > 0:
+  remainder = Number %base
+  if remainder >9:
+    hexResult = chr(remainder+55) + hexResult
+  else:
+    hexResult = str(remainder) + hexResult
+  Number = Number//base
+print(hexResult)
